@@ -9,6 +9,6 @@ if direct_login:
 send_to_host_login = st.button("Login with send to host")
 
 if send_to_host_login:
-    st.experimental_user.login(send_to_host=True)
+    st.experimental_user.login(send_redirect_to_host=True)
 
 st.write(st.experimental_user)
