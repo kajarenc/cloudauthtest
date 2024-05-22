@@ -13,5 +13,11 @@ if send_to_host_login:
 
 st.write(st.experimental_user)
 
+
+logout_button = st.button("Logout")
+
+if logout_button:
+    st.experimental_user.logout()
+
 x = st.slider("x")  # 👈 this is a widget
 st.write(x, "squared is", x * x)
