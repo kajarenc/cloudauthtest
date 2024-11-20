@@ -2,7 +2,6 @@ import streamlit as st
 
 
 google_login = st.button("Login with Google")
-
 if google_login:
     st.experimental_user.login("google")
 
@@ -10,6 +9,10 @@ if google_login:
 okta_login = st.button("Login with Okta")
 if okta_login:
     st.experimental_user.login("okta")
+
+microsoft_login = st.button("Login with Microsoft")
+if microsoft_login:
+    st.experimental_user.login("microsoft")
 
 st.write(st.experimental_user)
 
