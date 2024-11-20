@@ -1,15 +1,10 @@
 import streamlit as st
 
 
-direct_login = st.button("Login with direct redirect")
+google_login = st.button("Login with Google")
 
-if direct_login:
-    st.experimental_user.login()
-
-send_to_host_login = st.button("Login with send to host")
-
-if send_to_host_login:
-    st.experimental_user.login(send_redirect_to_host=True)
+if google_login:
+    st.experimental_user.login("google")
 
 st.write(st.experimental_user)
 
