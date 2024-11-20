@@ -6,6 +6,11 @@ google_login = st.button("Login with Google")
 if google_login:
     st.experimental_user.login("google")
 
+
+okta_login = st.button("Login with Okta")
+if okta_login:
+    st.experimental_user.login("okta")
+
 st.write(st.experimental_user)
 
 
