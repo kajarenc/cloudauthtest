@@ -21,3 +21,13 @@ if logout_button:
 
 x = st.slider("x")  # 👈 this is a widget
 st.write(x, "squared is", x * x)
+
+
+st.write("TEST FOR FILE UPLOADER")
+x = st.file_uploader("Upload a photo")
+
+if x is not None:
+    st.image(x)
+    st.write(x.name)
+    st.write(x.type)
+    st.write(x.size)
